@@ -1,0 +1,79 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+   <div class="col-6 offset-3">
+    
+     <form action="/signup" method="post"> 
+      <div class="mb-3" class="needs-validation"  nonvalidate>
+        <label for="username" class="form-label">Username</label>
+        <input 
+          name="username" 
+          id="username"
+          type="text" 
+          placeholder="username" 
+          class="form-control"
+          required
+        />
+         <div class="valid-feedback">
+        Looks good!</div>
+   
+      </div>
+        <div class="mb-3" class="needs-validation"  nonvalidate>
+        <label for="email" class="form-label"> Email</label>
+        <input 
+          name="email" 
+          id="email"
+          type="email" 
+          placeholder="email" 
+          class="form-control"
+          required
+        />
+         <div class="valid-feedback">
+        Looks good!</div>
+        </div>
+      
+             <div class="mb-3" class="needs-validation"  nonvalidate>
+        <label for="password" class="form-label"> password</label>
+        <input 
+          name="password" 
+          type="password"     
+          class="form-control"
+          required
+        />
+        </div>
+        <button class="btn btn-success " type="submit"> SignUp</button>
+
+      </form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <form action="/signup" method="post">
+            <div class="mb-3" class="needs-validation"  nonvalidate >
+        <label for="username" class="username">username</label>
+        <input 
+          name="listing[title]" 
+          id="username"
+          type="text" 
+          class="form-control"
+          required
+        />
+         <div class="valid-feedback">
+      Looks good
+    </div>
+    </div>
+
+    </form> -->
