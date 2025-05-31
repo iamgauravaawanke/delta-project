@@ -145,9 +145,9 @@ app.use("/", userRouter);
 // app.all("*", (req, res, next) => {
 //   next(new ExpressError(404, "Page Not Found"));
 // });
-app.get('/', (req, res) => {
-  res.send('🚀 API is running successfully!');
-});
+// app.get('/', (req, res) => {
+//   res.send('🚀 API is running successfully!');
+// });
 // Central error handler
 app.use((err, req, res, next) => {
   const { statusCode = 500, message = "Something went wrong" } = err;
